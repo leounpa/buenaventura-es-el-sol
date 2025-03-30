@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buenaventura es el Sol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffdd00, #4caf50); /* Amarillo y verde */
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .button {
+            background-color: #ffdd00;
+            color: #4caf50;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ffb300;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-text {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .radio-player {
+            margin-top: 30px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para los espacios de publicidad */
+        .advertisement {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .advertisement h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .advertisement p {
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Buenaventura es el Sol</h1>
+        <h2>Escucha La Farra: ¡La mejor música está aquí!</h2>
+    </header>
+
+    <!-- Espacio de publicidad en el encabezado -->
+    <div class="advertisement">
+        <h4>Publicidad</h4>
+        <p>Este es un espacio para publicidad. ¡Pronto podrás colocar tus anuncios aquí!</p>
+    </div>
+
+    <div class="container">
+        <p>Bienvenidos a la página donde la luz, la energía y la música se encuentran.</p>
+        <button class="button" onclick="alert('¡Bienvenido a Buenaventura es el Sol!')">Únete a la Comunidad</button>
+
+        <!-- Reproductor de radio con auto-reproducción -->
+        <div class="radio-player">
+            <h3>Escucha La Farra en vivo:</h3>
+            <audio controls autoplay>
+                <source src="https://streaming.lafarrastereo.com:8000/live" type="audio/mpeg">
+                Tu navegador no soporta el formato de audio.
+            </audio>
+        </div>
+
+        <!-- Espacio de publicidad debajo del reproductor de radio -->
+        <div class="advertisement">
+            <h4>Publicidad</h4>
+            <p>Este es otro espacio donde podrás colocar tus anuncios o promociones.</p>
+        </div>
+    </div>
+
+    <!-- Espacio de publicidad en el pie de página -->
+    <footer>
+        <div class="advertisement">
+            <h4>Publicidad</h4>
+            <p>Coloca aquí tus anuncios y promociones. ¡Pronto estará disponible!</p>
+        </div>
+        <p class="footer-text">© 2025 Buenaventura es el Sol - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
